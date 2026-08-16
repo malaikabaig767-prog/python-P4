@@ -1,4 +1,4 @@
-# 🧠 General Knowledge Quiz
+#  General Knowledge Quiz
 
 **DecodeLabs Industrial Training Kit — Project 4 (Optional Mastery Phase)**
 
@@ -9,7 +9,7 @@ based on user input.
 
 ---
 
-## 📋 Overview
+##  Overview
 
 The player is asked 3 questions one at a time. For each question,
 their typed answer is captured, sanitized, and compared against a
@@ -22,7 +22,7 @@ hood it models a small **decision engine**: raw human input is
 chaotic (inconsistent casing, stray whitespace), so the program must
 sanitize it before making a reliable comparison.
 
-## ✨ Features
+##  Features
 
 - **3-question quiz loop** — iterates through a list of question
   dictionaries, asking each one in turn.
@@ -41,12 +41,12 @@ sanitize it before making a reliable comparison.
 - **End-of-quiz feedback** — a short message (Perfect / Good effort /
   Better luck next time) based on the final score.
 
-## 🛠️ Requirements
+##  Requirements
 
 - Python 3.6 or higher
 - No external dependencies — only the Python standard library
 
-## 🚀 Usage
+##  Usage
 
 Run the script from the command line:
 
@@ -58,7 +58,7 @@ You'll be asked 3 questions in sequence. Type your answer and press
 Enter after each prompt. Capitalization and extra spaces don't
 matter — the program normalizes your input before checking it.
 
-## 📸 Example
+##  Example
 
 **Input:**
 
@@ -68,7 +68,7 @@ matter — the program normalizes your input before checking it.
 
 ![Output example](screenshots/output.png)
 
-## 🧠 How It Works
+##  How It Works
 
 The program follows the **Input → Process → Output → Storage (IPOS)**
 architecture, repeated once per question:
@@ -89,19 +89,16 @@ architecture, repeated once per question:
 After all 3 questions, the final score is printed using an f-string
 (`f"{score:>2}/{total}"`) for clean, aligned CLI output.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 General-Knowledge-Quiz/
 │
 ├── quiz_game.py             # Main script
 ├── README.md                 # This file
-└── screenshots/
-    ├── input.png              # Example of the input prompts
-    └── output.png             # Example of the final results
 ```
 
-## 🔮 Possible Extensions
+##  Possible Extensions
 
 - Load questions from an external file (JSON/CSV) instead of a
   hardcoded list
